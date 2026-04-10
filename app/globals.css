@@ -1,26 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #2d2d2d;
+
+  /* Exact palette from original */
+  --hero-bg: #2d2d2d;
+  --navy: #174a5b;
+  --red: #ef3341;
+  --red-dark: #e71222;
+  --teal: #39aec0;
+  --teal-dark: #3091a1;
+  --gold-btn: #ffca00;
+  --gold-btn-dark: #d6aa00;
+  --gold-light: #f8d35b;
+  --gold-light-dark: #f6c834;
+  --orange: #e85b03;
+  --orange-dark: #c04b02;
+  --green: #7be054;
+  --cream: #f5f0eb;
+  --script-gold: #c49a6c;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: 'Open Sans', Helvetica, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+/* Italic script/display font for accent words */
+.font-script {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  color: var(--script-gold);
+}
+
+/* Red gradient button */
+.btn-red {
+  background: linear-gradient(to bottom, #ef3341 0%, #e71222 100%);
+  color: #fff;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-red:hover {
+  background: linear-gradient(to bottom, #e71222 0%, #ef3341 100%);
+  transform: scale(1.02);
+}
+
+/* Gold gradient button */
+.btn-gold {
+  background: linear-gradient(to bottom, #ffca00 0%, #d6aa00 100%);
+  color: #174a5b;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-gold:hover {
+  background: linear-gradient(to bottom, #d6aa00 0%, #ffca00 100%);
+  transform: scale(1.02);
+}
+
+/* Teal gradient button */
+.btn-teal {
+  background: linear-gradient(to bottom, #39aec0 0%, #3091a1 100%);
+  color: #fff;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-teal:hover {
+  background: linear-gradient(to bottom, #3091a1 0%, #39aec0 100%);
+  transform: scale(1.02);
+}
+
+/* Outline button */
+.btn-outline-red {
+  background: transparent;
+  color: #ef3341;
+  border: 3px solid #ef3341;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-outline-red:hover {
+  background: #ef3341;
+  color: #fff;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Countdown styling */
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 55px;
+}
+.countdown-value {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #174a5b;
+}
+.countdown-label {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #174a5b;
+  margin-top: 4px;
+}
+
+/* Speaker ticker marquee */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Animations */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 202, 0, 0.4); }
+  50% { box-shadow: 0 0 20px 10px rgba(255, 202, 0, 0.1); }
+}
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
 }

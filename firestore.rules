@@ -1,0 +1,11 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Summit leads - only server can write (via admin SDK)
+    match /summit-leads/{leadId} {
+      allow read: if false;
+      allow write: if false;
+    }
+  }
+}
