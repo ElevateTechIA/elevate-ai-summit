@@ -24,8 +24,8 @@ export default function HeroSection({ onOpenForm }: HeroProps) {
         </p>
       </div>
 
-      {/* Hero - dark bg matching original #2d2d2d */}
-      <section className="relative bg-[#2d2d2d] min-h-[85vh] flex items-center overflow-hidden">
+      {/* Hero - navy to amber gradient like original */}
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden" style={{ background: 'linear-gradient(135deg, #1a2744 0%, #2a3350 30%, #4a3a2a 65%, #8a6530 100%)' }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 w-full">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Left - text */}
