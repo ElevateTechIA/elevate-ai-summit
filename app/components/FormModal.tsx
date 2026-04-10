@@ -66,16 +66,17 @@ export default function FormModal({ isOpen, onClose }: FormModalProps) {
               <X className="w-5 h-5" />
             </button>
 
-            {/* Dark header with logo */}
-            <div className="bg-[#2d2d2d] px-6 py-5 text-center">
+            {/* Header with warm gradient like original */}
+            <div className="bg-gradient-to-b from-[#c49a6c] to-[#a07850] px-6 py-5 text-center">
               <p className="text-white font-bold text-lg">
-                Elevate AI<span className="font-light">&apos;</span> Summit{' '}
-                <span className="text-[#e85b03] font-extrabold">2026</span>
+                Elevate AI<span className="font-light">&apos;</span>{' '}
+                <span className="font-light">Summit</span>{' '}
+                <span className="text-[#ffca00] font-extrabold">2026</span>
               </p>
-              <p className="text-white/90 text-sm mt-1 flex items-center justify-center gap-1">
-                <span className="text-[#ffca00]">&#10070;</span>
+              <p className="text-white text-sm mt-1 flex items-center justify-center gap-1.5">
+                <span className="text-[#ffca00]">&#10097;&#10097;</span>
                 {t.form.headline}
-                <span className="text-[#ffca00]">&#10070;</span>
+                <span className="text-[#ffca00]">&#10096;&#10096;</span>
               </p>
             </div>
 
