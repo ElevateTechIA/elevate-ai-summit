@@ -70,7 +70,7 @@ export default function FormModal({ isOpen, onClose }: FormModalProps) {
             <div className="bg-gradient-to-b from-[#c49a6c] to-[#a07850] px-6 py-5 text-center">
               <p className="text-white font-bold text-lg">
                 Elevate AI<span className="font-light">&apos;</span>{' '}
-                <span className="font-light">Summit</span>{' '}
+                <span className="font-light">Masterclass</span>{' '}
                 <span className="text-[#ffca00] font-extrabold">2026</span>
               </p>
               <p className="text-white text-sm mt-1 flex items-center justify-center gap-1.5">

@@ -42,7 +42,7 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <img src="/images/logo_elevated.png" alt="Elevate AI" className="h-6 w-6" />
               <span className="text-[#2d2d2d] font-bold text-base">
-                Elevate AI<span className="font-light">&apos;</span> Summit
+                Elevate AI<span className="font-light">&apos;</span> Masterclass
               </span>
             </div>
             <div className="flex flex-wrap gap-x-2 gap-y-1 text-xs text-[#2d2d2d]/60">
@@ -58,7 +58,7 @@ export default function Home() {
             </div>
           </div>
           <p className="text-[10px] text-[#2d2d2d]/40 leading-relaxed mb-3">
-            &copy; 2026 Elevate AI Summit. All rights reserved.
+            &copy; 2026 Elevate AI. All rights reserved.
           </p>
           <p className="text-[10px] text-[#2d2d2d]/40 leading-relaxed">
             <strong>EARNINGS DISCLAIMER:</strong> We don&apos;t believe in &quot;get rich&quot; programs - only in hard work, adding value, building a real and professional career, and serving others with excellence and consistency.

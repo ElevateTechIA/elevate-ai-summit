@@ -38,7 +38,7 @@ export default function Navbar({ onOpenForm }: NavbarProps) {
             <span className="font-bold text-[#2d2d2d] text-sm leading-tight">
               Elevate AI
               <br />
-              <span>Summit </span>
+              <span>Masterclass </span>
               <span className="text-[#e5610e]">2026</span>
             </span>
           </div>

@@ -4,12 +4,12 @@ import { LanguageProvider } from './context/LanguageContext';
 import { ThemeProvider } from './context/ThemeContext';
 
 export const metadata: Metadata = {
-  title: 'Elevate AI Summit 2026 | Free Virtual Event for Entrepreneurs',
+  title: 'Elevate AI Masterclass 2026 | Free Live Virtual Classes for Entrepreneurs',
   description:
-    'Join Cesar Vega & world-class AI experts LIVE. Learn how to use AI to buy back your time, multiply your results, and accelerate your business. Free 3-day virtual event, May 15-17.',
+    'Join Cesar Vega LIVE in our 3-day virtual masterclass. Learn how to use AI to buy back your time, multiply your output, and accelerate your business. Free live online classes, May 15-17.',
   openGraph: {
-    title: 'Elevate AI Summit 2026 | Free Virtual Event',
-    description: 'Free 3-day virtual event. AI for entrepreneurs & business owners.',
+    title: 'Elevate AI Masterclass 2026 | Free Live Classes',
+    description: 'Free 3-day live virtual masterclass. AI for entrepreneurs & business owners.',
     type: 'website',
   },
 };

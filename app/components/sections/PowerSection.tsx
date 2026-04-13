@@ -32,7 +32,7 @@ export default function PowerSection({ onOpenForm }: PowerProps) {
           transition={{ delay: 0.1 }}
           className="text-lg sm:text-xl text-[#2d2d2d]/70 font-semibold mb-8 max-w-2xl mx-auto"
         >
-          At The Elevate AI Summit You&apos;ll Discover Exactly How To Implement AI Into{' '}
+          In The Elevate AI Masterclass You&apos;ll Discover Exactly How To Implement AI Into{' '}
           <span className="underline font-script text-[#c49a6c] text-xl sm:text-2xl">Your</span> Life With Confidence
         </motion.p>
 

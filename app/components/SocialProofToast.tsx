@@ -54,7 +54,7 @@ export default function SocialProofToast() {
               <strong>{current.name}</strong> from <strong>{current.city}</strong>
             </p>
             <p className="text-xs text-gray-500">
-              registered for <strong>The AI Summit</strong>
+              enrolled in <strong>Elevate AI Masterclass</strong>
             </p>
             <p className="text-xs text-gray-400">about 1 hour ago</p>
           </div>

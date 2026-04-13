@@ -23,7 +23,7 @@ export default function FinalCTASection({ onOpenForm }: FinalCTAProps) {
         >
           We Can&apos;t Wait To See You{' '}
           <span className="font-script text-3xl sm:text-4xl lg:text-5xl">May 15th - 17th</span>
-          {' '}For This Once A Year Global Elevate AI Summit
+          {' '}For This Once A Year Global Elevate AI Live Masterclass
         </motion.h2>
 
         <motion.p
@@ -47,7 +47,7 @@ export default function FinalCTASection({ onOpenForm }: FinalCTAProps) {
           whileTap={{ scale: 0.98 }}
         >
           <Zap className="w-5 h-5" />
-          Reserve My Free Seat Now
+          Enroll For Free Now
           <ArrowRight className="w-5 h-5" />
         </motion.button>
       </div>

@@ -39,7 +39,7 @@ export default function HeroSection({ onOpenForm }: HeroProps) {
                 <p className="text-white text-2xl font-bold leading-tight">
                   Elevate AI
                   <br />
-                  <span className="text-white">Summit </span>
+                  <span className="text-white">Masterclass </span>
                   <span className="text-[#e85b03] font-extrabold">2026</span>
                 </p>
               </motion.div>
